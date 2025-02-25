@@ -1,0 +1,22 @@
+[
+  {
+    "thumbnail": "/weather_thumbnail.png",
+    "title": "Weather App",
+    "description": "A simple weather app that shows the current weather of a city.",
+    "technologies": ["js_icon.png", "css_icon.png"],
+    "link": {
+      "label": "View project",
+      "url": "https://www.example.com"
+    }
+  },
+  {
+    "thumbnail": "/weather_thumbnail.png",
+    "title": "Weather App",
+    "description": "A simple weather app that shows the current weather of a city.",
+    "technologies": ["js_icon.png", "css_icon.png"],
+    "link": {
+      "label": "View project",
+      "url": "https://www.example.com"
+    }
+  }
+]

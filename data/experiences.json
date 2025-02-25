@@ -1,0 +1,16 @@
+[
+  {
+    "image": "/company_1.png",
+    "company": "Company 1",
+    "role": "Software Engineer",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien.",
+    "dates": "Dec 2024 - Present"
+  },
+  {
+    "image": "/company_1.png",
+    "company": "Company 1",
+    "role": "Software Engineer",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien.",
+    "dates": "Dec 2024 - Present"
+  }
+]

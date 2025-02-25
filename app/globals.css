@@ -36,4 +36,16 @@ body {
   .highlight {
     @apply bg-primary text-white px-5 rounded-[4px];
   }
+
+  .section-contents {
+    @apply w-full flex flex-col items-center gap-10 md:gap-[50px];
+  }
+
+  .card {
+    @apply bg-card rounded-lg card-shadow;
+  }
+
+  .contact-button {
+    @apply p-1.5 rounded-md card-shadow flex items-center justify-center w-8 h-8;
+  }
 }
