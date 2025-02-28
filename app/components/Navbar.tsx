@@ -6,9 +6,11 @@ import cn from "classnames";
 const navItems = {
   home: "Home",
   about: "About",
-  experience: "Experience",
+  skills: "Skills",
+  experiences: "Experience",
   projects: "Projects",
-  contact: "Contact",
+  educations: "Education",
+  contacts: "Contact",
 };
 
 const Navbar = () => {

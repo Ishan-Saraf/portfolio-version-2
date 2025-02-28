@@ -10,12 +10,69 @@ const Skills = () => {
     <SectionContainer id="skills">
       <div className="section-contents mx-[22px] md:mx-[116px]">
         <SectionHeader plainText="💻 This is my" highlightText="Tech Stack" />
-        <div className="card w-full px-[33px] py-[27px] flex flex-wrap flex-col md:flex-row justify-center items-center gap-[19px] md:gap-[33px]">
-          {skills.map((skill, id) => (
-            <Skill key={id} name={skill.name} icon={skill.icon} />
-          ))}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+          {/* Frontend */}
+          <div className="card p-6 rounded-xl border border-primary">
+            <h3 className="text-xl font-semibold text-center mb-4">Frontend</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {skills.frontend.map((skill, id) => (
+                <Skill key={id} name={skill.name} icon={skill.icon} />
+              ))}
+            </div>
+          </div>
+
+          {/* Backend */}
+          <div className="card p-6 rounded-xl border border-primary">
+            <h3 className="text-xl font-semibold text-center mb-4">Backend</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {skills.backend.map((skill, id) => (
+                <Skill key={id} name={skill.name} icon={skill.icon} />
+              ))}
+            </div>
+          </div>
+
+          {/* Databases */}
+          <div className="card p-6 rounded-xl border border-primary">
+            <h3 className="text-xl font-semibold text-center mb-4">
+              Databases
+            </h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {skills.databases.map((skill, id) => (
+                <Skill key={id} name={skill.name} icon={skill.icon} />
+              ))}
+            </div>
+          </div>
+
+          {/* Programming Languages */}
+          <div className="card p-6 rounded-xl border border-primary">
+            <h3 className="text-xl font-semibold text-center mb-4">
+              Programming Languages
+            </h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {skills.programming_languages.map((skill, id) => (
+                <Skill key={id} name={skill.name} icon={skill.icon} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+
+      <Image
+        src="/projects_highlight.svg"
+        alt="Highlight"
+        width={558}
+        height={558}
+        className="absolute hidden md:block left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
+      />
+      <Image
+        src="/projects_highlight_mobile.svg"
+        alt="Highlight"
+        width={558}
+        height={558}
+        className="absolute md:hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
+      />
+
       <>
         {/* Dark mode background */}
         <Image

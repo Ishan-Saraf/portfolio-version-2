@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Github",
+    "icon": "/social/github_icon.png",
+    "link": "https://github.com/Ishan-Saraf"
+  },
+  {
+    "name": "LinkedIn",
+    "icon": "/social/linkedin_icon.png",
+    "link": "https://www.linkedin.com/in/ishan-saraf-31279a227/"
+  },
+  {
+    "name": "LeetCode",
+    "icon": "/social/leetcode_icon.png",
+    "link": "https://leetcode.com/u/Ishan_Saraf/"
+  },
+  {
+    "name": "CodeStudio",
+    "icon": "/social/codingninja_icon.png",
+    "link": "https://www.naukri.com/code360/profile/Ishan_Saraf"
+  },
+  {
+    "name": "HackerRank",
+    "icon": "/social/hackerrank_icon.png",
+    "link": "https://www.hackerrank.com/profile/ishaansaraf03"
+  }
+]

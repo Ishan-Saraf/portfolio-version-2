@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfG8EwLPYg6j6x6hs3E1_cdiCAjSlAUtcKX78wQcaGNw&s",
+    "institute": "Inderprastha Engineering College, Ghaziabad",
+    "description": "I completed my Bachelor's Degree in Computer Science and Engineering at Inderprastha Engineering College, Ghaziabad. During my studies, I took courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    "course": "Bachelor of Technology in Computer Science and Engineering",
+    "dates": "Dec 2020 - June 2024"
+  },
+  {
+    "id": 1,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfpvZZzBgsezpeT8oVDgP12s8aX3KDAZcOmR52o4YJM7Gxk-7CAIGk7dGfVxUfo7YFL83R38A8RFL_hER51_dA98PZ85FC8pEIAo0wbAwmSFxRfKKQuppoNE-7Rwf6sF_FDO3BVnyYUg/s1600/kvs-logo-with-bg.png",
+    "institute": "Kendriya Vidyalaya",
+    "description": "I completed my class 12 high school education at Kendriya Vidyalaya, Pitampura, where I studied Science with Computer Science.",
+    "course": "CBSC(XII), Science with Computer Science",
+    "dates": "Apr 2019 - Apr 2020"
+  },
+  {
+    "id": 2,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfpvZZzBgsezpeT8oVDgP12s8aX3KDAZcOmR52o4YJM7Gxk-7CAIGk7dGfVxUfo7YFL83R38A8RFL_hER51_dA98PZ85FC8pEIAo0wbAwmSFxRfKKQuppoNE-7Rwf6sF_FDO3BVnyYUg/s1600/kvs-logo-with-bg.png",
+    "institute": "Kendriya Vidyalaya",
+    "description": "I completed my class 10 education at Kendriya Vidyalaya, Pitampura.",
+    "course": "CBSC(X), Science",
+    "dates": "Apr 2017 - Apr 2018"
+  }
+]

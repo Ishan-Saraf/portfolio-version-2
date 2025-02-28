@@ -4,34 +4,34 @@ import React from "react";
 type Props = {
   id: number;
   image: string;
-  company: string;
-  role: string;
+  institute: string;
   description: string;
+  course: string;
   dates: string;
 };
 
-const Experience = ({
+const Education = ({
   id,
   image,
-  company,
-  role,
+  institute,
   description,
+  course,
   dates,
 }: Props) => {
   return (
     <div className="card flex flex-col items-stretch w-full max-w-screen-lg px-6 py-[27px] md:px-[33px] gap-3">
-      <div className="flex flex-col items-start md:flex-row md:gap-0 md:justify-between">
+      <div className="flex flex-col items-start md:gap-0 md:justify-between">
         <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-          <Image
+          <img
             src={image}
-            alt={company}
+            alt={institute}
             width={50}
             height={50}
             className="rounded-full"
           />
-          <h3 className="text-xl font-medium">{company}</h3>
+          <h3 className="text-xl font-bold">{institute}</h3>
         </div>
-        <p className="text-base md:text-xl font-medium">{role}</p>
+        <p className="text-base md:text-l font-semibold mt-5">{course}</p>
       </div>
       <p className="text-sm md:text-base">{description}</p>
       <p className="text-sm md:text-base">{dates}</p>
@@ -39,4 +39,4 @@ const Experience = ({
   );
 };
 
-export default Experience;
+export default Education;

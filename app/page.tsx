@@ -12,6 +12,8 @@ export default function Home() {
         <Navbar />
         <ThemeToggle />
         <TopBackground />
+
+        {/* Bottom gradient */}
         <Image
           src="/bottom_gradient_mobile.svg"
           alt="Bottom gradient"

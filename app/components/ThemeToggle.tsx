@@ -25,16 +25,19 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="fixed top-[58px] left-6 md:top-16 md:left-auto md:right-[42px] w-9 h-[18px] bg-gray-800 dark:bg-gray-200 rounded-lg z-50 flex items-center justify-end dark:justify-start px-1"
-    >
-      {isDarkMode ? (
-        <Image src="/sun_icon.svg" alt="sun" width={18} height={18} />
-      ) : (
-        <Image src="/moon_icon.svg" alt="moon" width={18} height={18} />
-      )}
-    </button>
+    <>
+      {/* Theme toggle button */}
+      <button
+        onClick={toggleTheme}
+        className="fixed top-[58px] left-6 md:top-16 md:left-auto md:right-[42px] w-9 h-[18px] bg-gray-800 dark:bg-gray-200 rounded-lg z-50 flex items-center justify-end dark:justify-start px-1"
+      >
+        {isDarkMode ? (
+          <Image src="/sun_icon.svg" alt="sun" width={18} height={18} />
+        ) : (
+          <Image src="/moon_icon.svg" alt="moon" width={18} height={18} />
+        )}
+      </button>
+    </>
   );
 };
 

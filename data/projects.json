@@ -1,22 +1,112 @@
 [
   {
-    "thumbnail": "/weather_thumbnail.png",
-    "title": "Weather App",
-    "description": "A simple weather app that shows the current weather of a city.",
-    "technologies": ["js_icon.png", "css_icon.png"],
+    "thumbnail": "/project/wisper_project.png",
+    "title": "Wisper",
+    "description": "A browser-based chatting application for real-time communication with a modern tech stack.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Axios",
+      "Styled-components",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Socket.io",
+      "Bcrypt",
+      "CORS"
+    ],
     "link": {
-      "label": "View project",
-      "url": "https://www.example.com"
+      "label": "View",
+      "url": "https://chat-app-wisper.netlify.app/"
     }
   },
   {
-    "thumbnail": "/weather_thumbnail.png",
-    "title": "Weather App",
-    "description": "A simple weather app that shows the current weather of a city.",
-    "technologies": ["js_icon.png", "css_icon.png"],
+    "thumbnail": "/project/fake_account_detector_project.png",
+    "title": "Fake Instagram Account Detector",
+    "description": "A web app that identifies potential fake Instagram accounts using machine learning.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Python",
+      "Flask",
+      "TensorFlow",
+      "Keras",
+      "NumPy",
+      "Pandas",
+      "Jupyter Notebook"
+    ],
     "link": {
-      "label": "View project",
-      "url": "https://www.example.com"
+      "label": "View",
+      "url": "https://github.com/Ishan-Saraf/fake-instagram-profile-detector"
+    }
+  },
+  {
+    "thumbnail": "/project/whatsApp_chat_analyzer_project.png",
+    "title": "WhatsApp Chat Analyzer",
+    "description": "A tool that analyzes WhatsApp chat data and generates insights using Python.",
+    "technologies": [
+      "Python",
+      "streamlit",
+      "matplotlib",
+      "seaborn",
+      "urlextract",
+      "wordcloud",
+      "pandas",
+      "emoji"
+    ],
+    "link": {
+      "label": "View",
+      "url": "https://ishan-saraf-whatsapp-chat-analyzer-app-4t51wz.streamlit.app/"
+    }
+  },
+  {
+    "thumbnail": "/project/youtube_clone_project.png",
+    "title": "YouTube Clone",
+    "description": "A YouTube clone using YouTube Data API to search and play videos.",
+    "technologies": [
+      "React",
+      "Redux Toolkit",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "API"
+    ],
+    "link": {
+      "label": "View",
+      "url": "https://project-yt-c.netlify.app/"
+    }
+  },
+  {
+    "thumbnail": "/project/note_hub_project.png",
+    "title": "Note Hub",
+    "description": "An online sticky note web application for creating and managing notes.",
+    "technologies": ["HTML", "CSS", "JavaScript", "React", "Material UI"],
+    "link": {
+      "label": "View",
+      "url": "https://nte-hb.netlify.app/"
+    }
+  },
+  {
+    "thumbnail": "/project/candy_crush_clone_project.png",
+    "title": "Candy Crush Clone",
+    "description": "A replica of the Candy Crush game built using React and Redux Toolkit.",
+    "technologies": ["HTML", "CSS", "JavaScript", "React"],
+    "link": {
+      "label": "View",
+      "url": "https://project-cndy-cln.netlify.app/"
+    }
+  },
+  {
+    "thumbnail": "/project/study_sync_project.png",
+    "title": "StudySync - Frontend Project",
+    "description": "A beautifully designed landing page built with pure HTML & CSS.",
+    "technologies": ["HTML", "CSS"],
+    "link": {
+      "label": "View",
+      "url": "https://ishan-saraf.github.io/Study-Sync-Project/"
     }
   }
 ]

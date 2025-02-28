@@ -1,16 +1,9 @@
 [
   {
-    "image": "/company_1.png",
-    "company": "Company 1",
+    "image": "/company/delberto_logo.jpeg",
+    "company": "Delberto",
     "role": "Software Engineer",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien.",
-    "dates": "Dec 2024 - Present"
-  },
-  {
-    "image": "/company_1.png",
-    "company": "Company 1",
-    "role": "Software Engineer",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien.",
+    "description": "Working on full-stack development, building scalable web applications, and optimizing system performance. Responsible for developing new features, improving UI/UX, and ensuring seamless integration between frontend and backend services.",
     "dates": "Dec 2024 - Present"
   }
 ]

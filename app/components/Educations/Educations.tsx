@@ -1,26 +1,26 @@
 import React from "react";
 import SectionContainer from "../Section/SectionContainer";
 import SectionHeader from "../Section/SectionHeader";
-import experiences from "@/data/experiences.json";
-import Experience from "./Experience";
+import educations from "@/data/educations.json";
+import Education from "./Education";
 import Image from "next/image";
 
-const Experiences = () => {
+const Educations = () => {
   return (
-    <SectionContainer id="experiences">
+    <SectionContainer id="educations">
       <div className="section-contents mb-[66px] md:mb-[43px] md:mx-[64px]">
-        <SectionHeader plainText="🏢 My" highlightText="Work Experience" />
+        <SectionHeader plainText="🏫 My" highlightText="Qualifications" />
         <div className="w-full px-6 md:px-[52px] flex flex-col gap-5">
-          {experiences.map((experience, id) => {
+          {educations.map((education, id) => {
             return (
-              <Experience
+              <Education
                 key={id}
                 id={id}
-                image={experience.image}
-                company={experience.company}
-                role={experience.role}
-                description={experience.description}
-                dates={experience.dates}
+                image={education.image}
+                institute={education.institute}
+                description={education.description}
+                course={education.course}
+                dates={education.dates}
               />
             );
           })}
@@ -46,4 +46,4 @@ const Experiences = () => {
   );
 };
 
-export default Experiences;
+export default Educations;
