@@ -83,13 +83,17 @@ const Project = ({
               className="flex items-center px-[5px] py-[3px] bg-white bg-opacity-[24%] rounded text-[14px] transition duration-300 hover:bg-opacity-40"
             >
               <span className="hidden md:block">{link.label}</span>
-              <img
+              <Image
                 src="/link_arrow.svg"
+                height={20}
+                width={20}
                 alt="arrow"
                 className="block dark:hidden"
               />
-              <img
+              <Image
                 src="/link_arrow_dark.svg"
+                height={20}
+                width={20}
                 alt="arrow"
                 className="hidden dark:block"
               />

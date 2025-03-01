@@ -1,25 +1,25 @@
 {
   "frontend": [
-    { "name": "HTML", "icon": "programming/html_icon.png" },
-    { "name": "CSS", "icon": "programming/css_icon.png" },
-    { "name": "React", "icon": "programming/react_icon.png" },
-    { "name": "Next.js", "icon": "programming/nextjs_icon.png" }
+    { "name": "HTML", "icon": "/programming/html_icon.png" },
+    { "name": "CSS", "icon": "/programming/css_icon.png" },
+    { "name": "React", "icon": "/programming/react_icon.png" },
+    { "name": "Next.js", "icon": "/programming/nextjs_icon.png" }
   ],
   "backend": [
-    { "name": "Node.js", "icon": "programming/nodejs_icon.png" },
-    { "name": "Express.js", "icon": "programming/expressjs_icon.png" },
-    { "name": "Flask", "icon": "programming/flask_icon.png" }
+    { "name": "Node.js", "icon": "/programming/nodejs_icon.png" },
+    { "name": "Express.js", "icon": "/programming/expressjs_icon.png" },
+    { "name": "Flask", "icon": "/programming/flask_icon.png" }
   ],
   "databases": [
-    { "name": "MongoDB", "icon": "programming/mongo_icon.png" },
-    { "name": "PostgreSQL", "icon": "programming/postgres_icon.png" },
-    { "name": "SQL", "icon": "programming/sql_icon.png" }
+    { "name": "MongoDB", "icon": "/programming/mongo_icon.png" },
+    { "name": "PostgreSQL", "icon": "/programming/postgres_icon.png" },
+    { "name": "SQL", "icon": "/programming/sql_icon.png" }
   ],
   "programming_languages": [
-    { "name": "C", "icon": "programming/c_icon.png" },
-    { "name": "C++", "icon": "programming/cpp_icon.png" },
-    { "name": "Python", "icon": "programming/python_icon.png" },
-    { "name": "JavaScript", "icon": "programming/js_icon.png" },
-    { "name": "TypeScript", "icon": "programming/ts_icon.png" }
+    { "name": "C", "icon": "/programming/c_icon.png" },
+    { "name": "C++", "icon": "/programming/cpp_icon.png" },
+    { "name": "Python", "icon": "/programming/python_icon.png" },
+    { "name": "JavaScript", "icon": "/programming/js_icon.png" },
+    { "name": "TypeScript", "icon": "/programming/ts_icon.png" }
   ]
 }

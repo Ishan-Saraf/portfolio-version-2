@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="flex flex-col gap-[13px] items-center md:gap-[34px] md:my-[58px] md:items-start">
         <Reveal initialX={-25}>
           <h1 className="text-2xl/l text-center font-semibold block md:text-[40px] md:text-start md:inline">
-            <span className="-ml-3">👋🏻</span> Hello, I'm {personal[0].name} and
-            I'm a{" "}
+            <span className="-ml-3">👋🏻</span> Hello, I&apos;m {personal[0].name}{" "}
+            and I&apos;m a{" "}
             <span className="block text-[27px] highlight mt-2 md:text-[45px]  md:inline md:mt-8">
               Software Engineer
             </span>
@@ -27,7 +27,7 @@ const Hero = () => {
             href={`mailto: ${personal[0].email}`}
             className="self-center bg-primary text-white p-2.5 rounded flex gap-2.5 items-center text-sm md:self-start md:text-xl/6 hover:scale-[105%] transition"
           >
-            Let's Connect! <img src="/arrow_right_icon.svg" alt="arrow" />
+            Let&apos;s Connect! <img src="/arrow_right_icon.svg" alt="arrow" />
           </a>
         </Reveal>
       </div>

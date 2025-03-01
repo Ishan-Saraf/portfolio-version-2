@@ -3,6 +3,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import cn from "classnames";
 import Reveal from "./Reveal";
+import Image from "next/image";
 
 const navItems = {
   home: "Home",
@@ -51,13 +52,17 @@ const Navbar = () => {
         className="bg-background p-3 shadow-md md:hidden rounded-full flex justify-center items-center w-12 h-12 transition-transform duration-200 ease-in-out hover:scale-110"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <img
+        <Image
           className="block dark:hidden w-6 h-6"
+          height={30}
+          width={30}
           src="/menu_icon_light.svg"
           alt="menu"
         />
-        <img
+        <Image
           className="hidden dark:block w-6 h-6"
+          height={30}
+          width={30}
           src="/menu_icon_dark.svg"
           alt="menu"
         />

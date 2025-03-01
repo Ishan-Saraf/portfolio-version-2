@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "../Reveal";
+import Image from "next/image";
 
 type Props = {
   id: number;
@@ -23,7 +24,7 @@ const Education = ({
       <div className="card flex flex-col items-stretch w-full max-w-screen-lg px-6 py-[27px] md:px-[33px] gap-3">
         <div className="flex flex-col items-start md:gap-0 md:justify-between">
           <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-            <img
+            <Image
               src={image}
               alt={institute}
               width={50}

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import personal from "@/data/personal.json";
 import contacts from "@/data/contacts.json";
 import Reveal from "./Reveal";
@@ -18,36 +18,36 @@ const Contact = () => {
   const smoothX = useSpring(xPos, { stiffness: 150, damping: 20 });
   const smoothY = useSpring(yPos, { stiffness: 150, damping: 20 });
 
-  const updatePos = (e: MouseEvent) => {
-    if (!ref.current) return;
+  const updatePos = useCallback(
+    (e: MouseEvent) => {
+      if (!ref.current) return;
 
-    const rect = ref.current.getBoundingClientRect();
-    const insideX = e.clientX - rect.left;
-    const insideY = e.clientY - rect.top;
+      const rect = ref.current.getBoundingClientRect();
+      const insideX = e.clientX - rect.left;
+      const insideY = e.clientY - rect.top;
 
-    // Ensure the glow only moves when inside the contact section
-    if (
-      insideX >= 0 &&
-      insideX <= rect.width &&
-      insideY >= 0 &&
-      insideY <= rect.height
-    ) {
-      xPos.set(insideX);
-      yPos.set(insideY);
-    }
-  };
+      if (
+        insideX >= 0 &&
+        insideX <= rect.width &&
+        insideY >= 0 &&
+        insideY <= rect.height
+      ) {
+        xPos.set(insideX);
+        yPos.set(insideY);
+      }
+    },
+    [xPos, yPos]
+  );
 
   useEffect(() => {
     const section = ref.current;
     if (!section) return;
 
-    // Attach listener only when inside the section
     section.addEventListener("mousemove", updatePos);
-
     return () => {
       section.removeEventListener("mousemove", updatePos);
     };
-  }, []);
+  }, [updatePos]);
 
   return (
     <Reveal initialY={60} delay={0.5}>
@@ -65,7 +65,7 @@ const Contact = () => {
               href={`mailto:${personal[0].email}`}
               className="self-center bg-primary text-white p-2.5 rounded-full flex gap-2.5 items-center justify-center text-lg md:text-xl/l font-normal hover:scale-[105%] transition"
             >
-              Let's get in touch!
+              Let&apos;s get in touch!
               <Image src="/mail_icon.svg" alt="mail" width={20} height={20} />
             </a>
 
