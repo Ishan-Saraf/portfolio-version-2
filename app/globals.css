@@ -48,4 +48,38 @@ body {
   .contact-button {
     @apply p-1.5 rounded-md card-shadow flex items-center justify-center w-8 h-8;
   }
+
+  .glowing-border-wrapper {
+    position: relative;
+    display: inline-block; /* Ensures the container wraps tightly around the image */
+    padding: 6px; /* Adjust padding to make space for the glow */
+    border-radius: 50%; /* Ensures the border follows a circular shape */
+  }
+
+  .glowing-border-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 4px; /* Space for glow */
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff);
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(white, white) content-box,
+      linear-gradient(white, white);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: borderAnimation 6s ease-in-out infinite;
+  }
+
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }

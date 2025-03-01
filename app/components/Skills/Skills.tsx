@@ -4,6 +4,7 @@ import SectionContainer from "../Section/SectionContainer";
 import SectionHeader from "../Section/SectionHeader";
 import Skill from "./Skill";
 import Image from "next/image";
+import Reveal from "../Reveal";
 
 const Skills = () => {
   return (
@@ -11,51 +12,57 @@ const Skills = () => {
       <div className="section-contents mx-[22px] md:mx-[116px]">
         <SectionHeader plainText="💻 This is my" highlightText="Tech Stack" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
-          {/* Frontend */}
-          <div className="card p-6 rounded-xl border border-primary">
-            <h3 className="text-xl font-semibold text-center mb-4">Frontend</h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {skills.frontend.map((skill, id) => (
-                <Skill key={id} name={skill.name} icon={skill.icon} />
-              ))}
+        <Reveal duration={1}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+            {/* Frontend */}
+            <div className="card p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-center mb-4">
+                Frontend
+              </h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                {skills.frontend.map((skill, id) => (
+                  <Skill key={id} name={skill.name} icon={skill.icon} />
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Backend */}
-          <div className="card p-6 rounded-xl border border-primary">
-            <h3 className="text-xl font-semibold text-center mb-4">Backend</h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {skills.backend.map((skill, id) => (
-                <Skill key={id} name={skill.name} icon={skill.icon} />
-              ))}
+            {/* Backend */}
+            <div className="card p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-center mb-4">
+                Backend
+              </h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                {skills.backend.map((skill, id) => (
+                  <Skill key={id} name={skill.name} icon={skill.icon} />
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Databases */}
-          <div className="card p-6 rounded-xl border border-primary">
-            <h3 className="text-xl font-semibold text-center mb-4">
-              Databases
-            </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {skills.databases.map((skill, id) => (
-                <Skill key={id} name={skill.name} icon={skill.icon} />
-              ))}
+            {/* Databases */}
+            <div className="card p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-center mb-4">
+                Databases
+              </h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                {skills.databases.map((skill, id) => (
+                  <Skill key={id} name={skill.name} icon={skill.icon} />
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Programming Languages */}
-          <div className="card p-6 rounded-xl border border-primary">
-            <h3 className="text-xl font-semibold text-center mb-4">
-              Programming Languages
-            </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {skills.programming_languages.map((skill, id) => (
-                <Skill key={id} name={skill.name} icon={skill.icon} />
-              ))}
+            {/* Programming Languages */}
+            <div className="card p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-center mb-4">
+                Programming Languages
+              </h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                {skills.programming_languages.map((skill, id) => (
+                  <Skill key={id} name={skill.name} icon={skill.icon} />
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
 
       <Image

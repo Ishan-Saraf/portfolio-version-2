@@ -2,6 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import cn from "classnames";
+import Reveal from "./Reveal";
 
 const navItems = {
   home: "Home",
@@ -63,41 +64,43 @@ const Navbar = () => {
       </button>
 
       {/* Navbar */}
-      <nav
-        className={cn(
-          "bg-background card-shadow p-3 rounded md:flex md:relative md:opacity-100 md:pointer-events-auto md:scale-100",
-          "absolute top-6 right-6 w-48 transition-all duration-200 ease-in-out md:w-auto",
-          {
-            "opacity-0 pointer-events-none scale-95 md:opacity-100 md:pointer-events-auto md:scale-100":
-              !isOpen,
-            "opacity-100 pointer-events-auto scale-100": isOpen,
-          }
-        )}
-      >
-        <ul className="flex flex-col md:flex-row items-center gap-4 text-lg font-normal">
-          {Object.entries(navItems).map(([key, value]) => (
-            <li key={key}>
-              <div
-                className={cn(
-                  "rounded p-1 transition-transform duration-200 cursor-pointer ease-in-out hover:scale-110",
-                  {
-                    "bg-primary text-white": isActive === key,
-                    "hover:bg-gray-200 dark:hover:bg-gray-700":
-                      isActive !== key,
-                  }
-                )}
-                onClick={() => {
-                  setIsActive(key);
-                  scrollToSection(key);
-                  setIsOpen(false);
-                }}
-              >
-                {value}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Reveal initialY={-20} duration={0.5} isVisible={isOpen || true}>
+        <nav
+          className={cn(
+            "bg-background card-shadow p-4 rounded-full md:flex md:relative md:opacity-100 md:pointer-events-auto md:scale-100",
+            "absolute top-6 right-6 w-48 transition-all duration-200 ease-in-out md:w-auto",
+            {
+              "opacity-0 pointer-events-none scale-95 md:opacity-100 md:pointer-events-auto md:scale-100":
+                !isOpen,
+              "opacity-100 pointer-events-auto scale-100": isOpen,
+            }
+          )}
+        >
+          <ul className="flex flex-col md:flex-row items-center gap-4 text-lg font-normal">
+            {Object.entries(navItems).map(([key, value]) => (
+              <li key={key}>
+                <div
+                  className={cn(
+                    "rounded-full p-1 transition-transform duration-200 cursor-pointer ease-in-out hover:scale-110",
+                    {
+                      "bg-primary text-white": isActive === key,
+                      "hover:bg-gray-200 dark:hover:bg-gray-700":
+                        isActive !== key,
+                    }
+                  )}
+                  onClick={() => {
+                    setIsActive(key);
+                    scrollToSection(key);
+                    setIsOpen(false);
+                  }}
+                >
+                  {value}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </Reveal>
     </div>
   );
 };

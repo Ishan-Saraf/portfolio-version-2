@@ -3,6 +3,7 @@ import React from "react";
 import personal from "@/data/personal.json";
 import SectionContainer from "./Section/SectionContainer";
 import SectionHeader from "./Section/SectionHeader";
+import Reveal from "./Reveal";
 
 const About = () => {
   return (
@@ -12,22 +13,26 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center md:gap-[60px] w-full h-full p-6 rounded-xl gap-[30px]">
           {/* Profile Image */}
-          <div className="flex justify-center items-center w-full h-full">
-            <Image
-              src="/profile_picture.jpg"
-              alt="Profile Picture"
-              width={300}
-              height={300}
-              className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] rounded-full border-2 border-primary object-cover"
-            />
-          </div>
+          <Reveal>
+            <div className="flex justify-center items-center w-full h-full glowing-border-wrapper">
+              <Image
+                src="/profile_picture.jpg"
+                alt="Profile Picture"
+                width={300}
+                height={300}
+                className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] rounded-full object-cover"
+              />
+            </div>
+          </Reveal>
 
           {/* About Text */}
-          <div className="card  p-4 flex flex-col gap-[30px] items-center justify-center md:gap-[34px] md:items-start">
-            <p className="text-center text-sm md:text-base md:text-start">
-              {personal[0].about}
-            </p>
-          </div>
+          <Reveal initialX={40}>
+            <div className="card  p-4 flex flex-col gap-[30px] items-center justify-center md:gap-[34px] md:items-start">
+              <p className="text-center text-sm md:text-base md:text-start">
+                {personal[0].about}
+              </p>
+            </div>
+          </Reveal>
         </div>
       </div>
     </SectionContainer>
